@@ -1,0 +1,201 @@
+/* Assuming that this file is at the same level as your components directory 
+and that your images are in the public folder at the root of your project. */
+body {
+    font-family: "Arial", sans-serif;
+    background: linear-gradient(160deg, #e6f7ff 0%, #fffae6 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  #app, .dashboard {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .dashboard-main {
+    flex-grow: 1;
+    padding-bottom: 60px;
+  }
+  
+  
+  
+  .dashboard-background {
+    background-image: url("/public/assets/images/DashboardBackground.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: auto;
+  }
+  
+  .header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    flex-direction: column;
+  }
+  
+  .icon {
+    z-index: 1;
+    background-image: url("/public/assets/icons/WellnessWatch-Photoroom.png-Photoroom.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+    width: 13vh;
+    height: 12vh;
+    margin: 1vh;
+  }
+  
+  .header-container h1 {
+    font-size: 2rem; /* Larger text for the header */
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; /* A custom font for the header */
+    color: rgb(140, 251, 255);
+    text-shadow: black 4px 4px; /* Add a subtle shadow to the text */
+    margin: 0; /* Remove default margin */
+    margin-top: -1.2vh;
+    margin-bottom: 1vh;
+  }
+  
+  .logout-button {
+    background-color: #cccbcb;
+    font-family: "Arial", sans-serif;
+  
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+    width: 18vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 0.7rem;
+    border: 0.1px solid rgb(0, 0, 0);
+    margin: 1vh;
+    margin-bottom: 1vh;
+  }
+  
+  .logout-btn-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: row;
+  }
+  
+  .logout-button:hover {
+    background-color: #3f6fdf;
+    color: white;
+  }
+  
+  #logout-icon {
+    color: black;
+    font-size: 1.2rem;
+  }
+  
+  .dashboard-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0;
+  }
+  
+  .dash-info-div {
+    width: 60vh;
+    height: 30vh;
+    background-color: rgb(231, 226, 226);
+    display: flex;
+    justify-content: center;
+    border-radius: 1rem;
+    opacity: 0.9;
+    margin-left: 2vh;
+    border: black 0.1px solid;
+    
+  }
+  
+  /* Intro Section Styles */
+  .intro-div {
+    width: 30vh;
+    height: 25vh;
+    background-color: rgb(231, 226, 226); /* Light background for the content */
+    border-radius: 1rem; /* Rounded corners */
+    padding: 1rem; /* Add padding to the content */
+    text-align: center; /* Center the text */
+    opacity: 0.9; /* Slightly transparent */
+    margin-right: 2vh; /* Space from the next element */
+    border: black 0.1px solid;
+  }
+  
+  .dashboard-options-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px; /* Adjust padding as necessary */
+    box-sizing: border-box;
+    margin-top: 2vh;
+  }
+  
+  .options-btn {
+    background-color: #cccbcb;
+    font-family: "Arial", sans-serif;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    font-size: 0.8rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius: 0.7rem;
+    border: 0.1px solid rgb(0, 0, 0);
+    margin-bottom: 1.5vh;
+  }
+  
+  .options-btn:hover {
+    background-color: #3f6fdf;
+    color: white;
+  }
+  
+  .dashboard-mail-container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    margin: 0;
+  }
+  
+  .dashboard-mail {
+    width: 65vh;
+    height: 25vh;
+    background-color: rgb(231, 226, 226);
+    display: flex;
+    justify-content: center;
+    border-radius: 1rem;
+    opacity: 0.9;
+    margin-left: 7vh;
+    border: black 0.1px solid;
+    margin-top: 2vh;
+  }
+  
+  /* Button Styles */
+  .button-blue,
+  .button-red {
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    color: white;
+    font-size: 1rem;
+    border-radius: 4px; /* Rounded corners for buttons */
+    text-transform: uppercase; /* Optional: Uppercase button text */
+  }
+  
+  .button-blue {
+    background-color: #007bff; /* Blue button */
+  }
+  
+  .button-red {
+    background-color: #d9534f; /* Red button */
+  }
+  
+  
+  

@@ -1,0 +1,17 @@
+# Go dependencies and build files
+/bin
+/pkg
+
+# Logs
+logs/
+*.log
+
+# Debug files
+debug/
+*.swp
+*.swo
+.vscode
+.idea/
+
+# Environment variables
+.env

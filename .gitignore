@@ -1,0 +1,55 @@
+# Node.js dependencies
+node_modules/
+jspm_packeges/
+
+# Optional npm cache directory
+.npm
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build directories
+build/
+dist/
+.DS_Store
+
+# Debug files
+debug/
+*.swp
+*.swo
+.vscode
+.idea/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# os-specific files
+Thumbs.db
+.DS_Store
+
+# Virtual environment
+venv/
+__pycache__/
+
+# Python specific
+*.py[cod]
+*.egg
+*.egg-info
+.eggs
+
+# Flask specific
+instance/
+.webassets-cache
+
+# Docker files
+docker-compose.yml
+
+# Miscellaneous
+*.swp
+*.swo

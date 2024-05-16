@@ -1,0 +1,82 @@
+/* LoginPage.css */
+.login-background {
+    background-image: url("/public/assets/images/LoginBackground.webp");
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  .login-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  .actual {
+    background-image: url("/public/assets/icons/actualwaving-nobgr.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20vh;
+    height: 28vh;
+    margin: 0 auto;
+    margin-top: 35vh;
+  }
+  
+  .login-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+  }
+  
+  .login-form label {
+    display: block;
+    margin-top: 20px;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .login-form input[type="email"],
+  .login-form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .login-form .error-input {
+    border-color: #e74c3c;
+  }
+  
+  .login-form .error {
+    color: #e74c3c;
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  
+  .login-form .form-buttons {
+    margin-top: 30px;
+  }
+  
+  .login-form button {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    background-color: #3498db;
+    color: white;
+    font-size: 18px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .login-form button:hover {
+    background-color: #2980b9;
+  }
+  
+  .forgot-password-button {
+    font-size: 0.8em; /* Adjust as needed */
+    padding: 5px 10px; /* Adjust as needed */
+  }
+  

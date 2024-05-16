@@ -1,0 +1,27 @@
+# Virtual Environment
+venv/
+__pycache__/
+
+# Python specific
+*.py[cod]
+*.egg
+*.egg-info/
+.eggs
+
+# Flask specific
+instance/
+.webassets-cache
+
+# Logs
+logs/
+*.log
+
+# Debug files
+debug/
+*.swp
+*.swo
+.vscode
+.idea/
+
+# Environment variables
+.env

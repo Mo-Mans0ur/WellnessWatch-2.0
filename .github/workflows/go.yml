@@ -1,0 +1,40 @@
+name: Go CI/CD
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Go
+        uses: actions/setup-go@v2
+        with:
+          go-version: '1.16'
+
+      - name: Install dependencies
+        run: go mod tidy
+        working-directory: Backend/NotificationService
+
+      - name: Run tests
+        run: go test ./...
+        working-directory: Backend/NotificationService
+
+      - name: Build Docker image
+        run: docker build -t notification-service:latest .
+        working-directory: Backend/NotificationService
+
+      - name: Push Docker image
+        run: |
+          docker tag notification-service:latest your-docker-repo/notification-service:latest
+          echo ${{ secrets.DOCKER_PASSWORD }} | docker login -u ${{ secrets.DOCKER_USERNAME }} --password-stdin
+          docker push your-docker-repo/notification-service:latest
